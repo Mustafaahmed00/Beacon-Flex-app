@@ -1,0 +1,36 @@
+﻿@page
+@model Technovator_Web_App.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<div class="container">
+    <img src="~/images/umass.png" alt="Umass Boston" class = "img" />
+    <h1><em>Welcome to the Beacon Flex App</em></h1>
+    <p>
+        <a href="/Login">Login</a> to join a meeting.
+    </p>
+</div>
+
+@section Styles {
+    <style>
+        h1 {
+            text-decoration: underline;
+        }
+
+        .navbar .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #007bff !important; /* Ensure the brand text is visible */
+            visibility: visible !important; /* Ensure the element is visible */
+            display: block !important; /* Ensure the element is displayed */
+            color: black
+        }
+        .img {
+            border:2px solid black;
+        }
+    </style>
+}
